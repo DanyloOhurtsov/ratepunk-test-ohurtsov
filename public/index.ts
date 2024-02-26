@@ -14,6 +14,7 @@ import Success from "./assets/success.svg";
 import TikTok from "./assets/tiktok.svg";
 import Twitter from "./assets/twitter.svg";
 import Voucher from "./assets/voucher.svg";
+import Favicon from "./assets/favicon.png";
 
 export {
     Apple,
@@ -32,4 +33,5 @@ export {
     TikTok,
     Twitter,
     Voucher,
+    Favicon,
 };
