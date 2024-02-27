@@ -13,6 +13,8 @@
         align-items: center;
         max-width: $size_72-0rem_1152px;
         margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
         .linkItem {
             display: flex;
             padding: $size_0-75rem-12px $size_1-50rem_24px;
@@ -21,28 +23,40 @@
             border: 1px solid $dark_color;
             gap: $size_1-00rem-16px;
             .text {
-                p{
-                    font-size: $size_1-00rem-16px;  
+                p {
+                    font-size: $size_1-00rem-16px;
                     color: $white_color;
                     text-transform: lowercase;
                 }
-                .bold{
+                .bold {
                     font-size: $size_1-25rem-20px;
                     font-weight: bold;
                 }
             }
         }
-        .rate{
+        .rate {
             display: flex;
             gap: $size_1-00rem-16px;
             align-items: center;
-            .stars{
+            .stars {
                 display: flex;
                 gap: 4px;
             }
-            p{
+            p {
                 font-size: $size_1-25rem-20px;
                 color: $white_color;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .appLinksContainer {
+        .appLinksContent {
+            .rate {
+                p {
+                    font-size: $size_1-00rem-16px;
+                }
             }
         }
     }
