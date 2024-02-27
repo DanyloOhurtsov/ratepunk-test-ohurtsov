@@ -1,0 +1,53 @@
+@import "/constants/styles/variables";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: $size_1-00rem-16px;
+    width: 100%;
+    margin-top: 40px;
+    * {
+        font-family: $notoSans;
+    }
+    .labelError {
+        font-size: $size_0-75rem-12px;
+        color: $red_color;
+    }
+    .inputSection {
+        display: flex;
+        background-color: $white_color;
+        column-gap: $size_1-25rem-20px;
+        padding: 1px;
+        overflow: hidden;
+        height: 64px;
+        align-items: center;
+        border-radius: $px_8;
+        border: 1px solid $dark_color;
+        .emailIcon {
+            margin-left: 16px;
+        }
+        .emailInput {
+            padding: $size_1-00rem-16px;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: none;
+            font-size: $size_1-25rem-20px;
+            color: $dark_color;
+            ::placeholder {
+                color: $grey_color;
+                font-size: $size_1-25rem-20px;
+            }
+        }
+    }
+    .submitButton {
+        width: 100%;
+        height: 64px;
+        padding: $size_1-00rem-16px;
+        background-color: $blue_color;
+        font-size: $size_1-25rem-20px;
+        color: $white_color;
+        border-radius: $px_8;
+        border: 1px solid $dark_color;
+    }
+}

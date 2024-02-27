@@ -1,5 +1,14 @@
 import { NavBar_Links_types } from "../types";
-import { Twitter, Facebook, TikTok, Instagram, LinkedIn } from "@/public";
+import {
+    Twitter,
+    Facebook,
+    TikTok,
+    Instagram,
+    LinkedIn,
+    Voucher,
+    CollectCoins,
+    Invite,
+} from "@/public";
 
 export const NavBar_Links: NavBar_Links_types[] = [
     {
@@ -72,5 +81,31 @@ export const Footer_SocialLinks = [
         id: 5,
         image: TikTok,
         url: "",
+    },
+];
+
+export const Hero_Roadway = [
+    {
+        id: 1,
+        label: "invite friends",
+        description: "Refer friends with your unique referral link.",
+        step: "Step 1",
+        image: Invite,
+    },
+    {
+        id: 2,
+        label: "collect coins",
+        description:
+            "Get 1 coin for each friend that installs our extension using your referral link.",
+        step: "Step 2",
+        image: CollectCoins,
+    },
+    {
+        id: 3,
+        label: "get voucher",
+        description:
+            "Redeem for a $20 hotel booking voucher once you collect 20 coins.",
+        step: "Step 3",
+        image: Voucher,
     },
 ];

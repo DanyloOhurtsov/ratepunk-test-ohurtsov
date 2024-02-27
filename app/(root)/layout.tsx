@@ -6,7 +6,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
     return (
         <div className={styles.rootContainer}>
             <Header />
-            <main>{children}</main>
+            <main className={styles.mainContainer}>{children}</main>
             <Footer />
         </div>
     );
