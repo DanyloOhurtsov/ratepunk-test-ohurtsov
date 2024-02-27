@@ -3,15 +3,15 @@
 .navbarList {
     display: none;
     align-items: center;
-    column-gap: $size_3-00rem;
+    column-gap: $size_3-00rem_48px;
 }
 
 .listItem {
     transition-property: all;
     transition-timing-function: cubic-bezier($transition_timing);
     transition-duration: $transition_duration;
-    font-size: $size_1-25rem;
-    line-height: $size_1-75rem;
+    font-size: $size_1-25rem-20px;
+    line-height: $size_1-75rem_28px;
     &:hover {
         color: $blue_color;
     }

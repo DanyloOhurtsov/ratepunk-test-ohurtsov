@@ -2,12 +2,137 @@
 
 .footerContainer {
     background-color: $pink_color;
-    padding: $size_3-50rem $size_1-00rem;
+    padding: $size_3-50rem_56px $size_1-00rem-16px;
     width: 100%;
     border: 1px solid $dark_color;
+    * {
+        font-family: $notoSans;
+    }
+    .footerContent {
+        max-width: $size_72-0rem_1152px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        row-gap: $size_3-00rem_48px;
+        .leftSide {
+            width: calc(50% - 24px);
+            max-width: 544px;
+            display: flex;
+            flex-direction: column;
+            row-gap: $size_2-00rem_32px;
+            p {
+                font-size: $size_1-00rem-16px;
+            }
+        }
+        .rightSide {
+            width: calc(40% - 24px);
+            max-width: 440px;
+            column-gap: $size_2-00rem_32px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: $size_1-50rem_24px;
+            min-width: 350px;
+            .rightSideContainer {
+                display: flex;
+                flex-direction: column;
+                row-gap: $size_1-50rem_24px;
+                .rightSideTitle {
+                    font-size: $size_1-00rem-16px;
+                    font-weight: bold;
+                    line-height: $size_1-50rem_24px;
+                }
+                .quickLinksList {
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: $size_1-00rem-16px;
+                    .quickLinkItem {
+                        a {
+                            color: $dark_color;
+                            font-size: $size_1-00rem-16px;
+                            line-height: $size_1-50rem_24px;
+                            &:hover {
+                                transition-property: all;
+                                transition-duration: $transition_duration;
+                                transition-timing-function: $transition_timing;
+                                color: $blue_color;
+                            }
+                        }
+                    }
+                }
+                .linkEmail {
+                    display: flex;
+                    gap: $size_1-00rem-16px;
+                    align-items: center;
+                    p {
+                        font-size: $size_1-00rem-16px;
+                        line-height: $size_1-50rem_24px;
+                        color: $dark_color;
+                    }
+                    &:hover {
+                        p {
+                            transition-property: all;
+                            transition-duration: $transition_duration;
+                            transition-timing-function: $transition_timing;
+                            color: $blue_color;
+                        }
+                    }
+                }
+                .socialLinksList {
+                    display: flex;
+                    column-gap: $size_0-50rem-8px;
+                    .socilaLinkItem {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: $px_8;
+                        border: 1px solid $dark_color;
+                        background-color: $blue_color;
+                    }
+                }
+            }
+            .rightSideTwoContainers {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+            }
+        }
+        .copyright {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: $grey_color;
+            font-size: $size_1-00rem-16px;
+            line-height: $size_1-50rem_24px;
+        }
+    }
 }
-.footerContent {
-    max-width: $size_72-0rem;
-    margin-left: auto;
-    margin-right: auto;
+
+@media (max-width: 730px) {
+    .footerContainer {
+        padding: $size_4-00rem_64px $size_1-00rem-16px;
+        .footerContent{
+            padding: 0 $size_1-00rem-16px;
+            padding-bottom: $size_4-00rem_64px;
+            flex-direction: column;
+            .leftSide{
+                width: 100%;
+                max-width: none;
+            }
+            .rightSide{
+                flex-direction: column;
+                row-gap: $size_2-00rem_32px;
+                .rightSideTwoContainers{
+                    row-gap: $size_2-00rem_32px;
+                }
+            }
+            .copyright{
+                left: 16px;
+            }
+        }
+    }
 }

@@ -1,9 +1,9 @@
 // Colors
-$dark_color: #1F343E;
-$blue_color: #4EB3E3;
-$pink_color: #F8F4F9;
-$yellow_color: #F8CC5D;
-$grey_color: #6D7A80;
+$dark_color: #1f343e;
+$blue_color: #4eb3e3;
+$pink_color: #f8f4f9;
+$yellow_color: #f8cc5d;
+$grey_color: #6d7a80;
 $white_color: #fff;
 
 // Border radius
@@ -11,14 +11,21 @@ $px_16: 16px;
 $px_8: 8px;
 
 // Sizes
-$size_1-00rem: 1rem;
-$size_1-25rem: 1.25rem;
-$size_1-50rem: 1.5rem;
-$size_1-75rem: 1.75rem;
-$size_3-00rem: 3rem;
-$size_3-50rem: 3.5rem;
-$size_72-0rem: 72rem;
+$size_0-50rem-8px: 0.5rem;
+$size_1-00rem-16px: 1rem;
+$size_1-25rem-20px: 1.25rem;
+$size_1-50rem_24px: 1.5rem;
+$size_1-75rem_28px: 1.75rem;
+$size_2-00rem_32px: 2rem;
+$size_3-00rem_48px: 3rem;
+$size_3-50rem_56px: 3.5rem;
+$size_4-00rem_64px: 4rem;
+$size_72-0rem_1152px: 72rem;
 
 // Transition all
 $transition_timing: cubic-bezier(0.4, 0, 0.2, 1);
 $transition_duration: 150ms;
+
+// Font family
+$notoSans: "Noto Sans", sans-serif;
+$caveatBrush: "Caveat Brush", cursive;
