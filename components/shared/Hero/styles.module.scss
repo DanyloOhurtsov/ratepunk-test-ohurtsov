@@ -119,6 +119,21 @@
             }
             .rightSide {
                 width: 100%;
+                gap: $size_3-00rem_48px;
+                .roadwayItem,
+                .roadwayItemReferse {
+                    flex-direction: column;
+                    gap: $size_2-00rem_32px;
+                    text-align: center;
+                    .rightRoad {
+                        .roadStep {
+                            font-size: $size_1-00rem-16px;
+                        }
+                        .roadDescription {
+                            font-size: $size_1-00rem-16px;
+                        }
+                    }
+                }
             }
         }
     }
