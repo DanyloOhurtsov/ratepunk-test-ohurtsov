@@ -60,27 +60,27 @@ export const Footer_SocialLinks = [
     {
         id: 1,
         image: Instagram,
-        url: "",
+        url: "https://www.instagram.com/ratepunk/",
     },
     {
         id: 2,
         image: Facebook,
-        url: "",
+        url: "https://www.facebook.com/r8punk/",
     },
     {
         id: 3,
         image: LinkedIn,
-        url: "",
+        url: "https://www.linkedin.com/company/ratepunk/",
     },
     {
         id: 4,
         image: Twitter,
-        url: "",
+        url: "https://twitter.com/rate_punk",
     },
     {
         id: 5,
         image: TikTok,
-        url: "",
+        url: "https://www.tiktok.com/@ratepunk",
     },
 ];
 
