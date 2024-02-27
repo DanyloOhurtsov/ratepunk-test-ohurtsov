@@ -19,6 +19,9 @@ const FormInput = ({ onSubmit }: FormInputProps) => {
     const [isSubmitClicked, setIsSubmitClicked] = useState(false);
 
     const onInputEmail = (value: string) => {
+        if(!value){
+            setIsSubmitClicked(false)
+        }
         setEmailValue(value);
     };
 
