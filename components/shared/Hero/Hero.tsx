@@ -29,7 +29,7 @@ const Hero = () => {
                         </h2>
                         <p className={styles.leftDescription}>
                             Refer your friends to us and earn hotel booking
-                            vouchers. We'll give you 1 coin for each friend that
+                            vouchers. We&apos;ll give you 1 coin for each friend that
                             installs our extension. Miuttom cash-out at 20
                             coins.
                         </p>
@@ -47,11 +47,11 @@ const Hero = () => {
                     {Hero_Roadway.map((item) => (
                         <div
                             key={item.id}
-                            className={`${
+                            className={
                                 item.id === 2
                                     ? styles.roadwayItemReferse
                                     : styles.roadwayItem
-                            }`}
+                            }
                         >
                             <div className={styles.leftRoad}>
                                 <Image
