@@ -57,14 +57,14 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: $size_1-75rem_28px;
-                .leftRoad{
+                .leftRoad {
                     flex-shrink: 0;
                     width: 144px;
                     height: 144px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    img{
+                    img {
                         width: 100%;
                         object-fit: contain;
                     }
@@ -85,7 +85,7 @@
                         color: $dark_color;
                         text-transform: uppercase;
                     }
-                    .roadDescription{
+                    .roadDescription {
                         font-size: $size_1-25rem-20px;
                         color: $dark_color;
                     }
@@ -93,6 +93,32 @@
             }
             .roadwayItemReferse {
                 flex-direction: row-reverse;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .heroContainer {
+        padding: $size_2-00rem_32px $size_1-00rem-16px;
+        .heroContent {
+            flex-direction: column;
+            .leftSide {
+                width: 100%;
+                padding: $size_2-00rem_32px $size_1-00rem-16px;
+                min-height: 539px;
+                .leftTop {
+                    .leftTitle {
+                        font-size: $size_2-00rem_32px;
+                    }
+                    .leftDescription {
+                        margin-top: $size_1-50rem_24px;
+                        font-size: $size_1-00rem-16px;
+                    }
+                }
+            }
+            .rightSide {
+                width: 100%;
             }
         }
     }

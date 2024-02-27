@@ -1,14 +1,17 @@
 "use client";
+
+//
 import { useState } from "react";
 import Image from "next/image";
 
+// @/
 import { Hero_Roadway } from "@/constants/text";
-import { Button } from "@/components/ui/button";
-import { Email } from "@/public";
 
+// ./
 import styles from "./styles.module.scss";
 import { FormCopy, FormInput } from "..";
 
+// ! Component
 const Hero = () => {
     const [isSubmit, setIsSubmit] = useState(false);
 

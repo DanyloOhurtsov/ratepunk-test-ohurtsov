@@ -51,3 +51,24 @@
         border: 1px solid $dark_color;
     }
 }
+
+@media (max-width: 1000px) {
+    .form {
+        margin-top: 24px;
+        .inputSection {
+            column-gap: $size_1-00rem-16px;
+            height: 56px;
+            .emailInput {
+                font-size: $size_1-00rem-16px;
+                ::placeholder {
+                    font-size: $size_1-00rem-16px;
+                }
+            }
+        }
+        .submitButton {
+            height: 56px;
+            background-color: $blue_color;
+            font-size: $size_1-00rem-16px;
+        }
+    }
+}
