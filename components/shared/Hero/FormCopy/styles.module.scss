@@ -1,1 +1,86 @@
 @import "/constants/styles/variables";
+
+.formCopy {
+    display: flex;
+    flex-direction: column;
+    gap: $size_1-00rem-16px;
+    margin-top: 64px;
+    * {
+        font-family: $notoSans;
+    }
+    .labelForm {
+        display: flex;
+        align-items: center;
+        gap: $size_1-00rem-16px;
+        p {
+            font-size: $size_1-00rem-16px;
+            color: $dark_color;
+            font-weight: bold;
+        }
+    }
+    .inputSector {
+        display: flex;
+        width: 100%;
+        background-color: $white_color;
+        height: 64px;
+        border-radius: $px_16;
+        border: 1px solid $dark_color;
+        padding-left: $size_1-00rem-16px;
+        overflow: hidden;
+        input {
+            outline: none;
+            border: none;
+            color: $grey_color;
+            font-size: $size_1-25rem-20px;
+            width: 80%;
+            height: 100%;
+        }
+        button {
+            width: 20%;
+            height: 100%;
+            background-color: $blue_color;
+            border-radius: 0;
+            font-size: $size_1-25rem-20px;
+            border-left: 1px solid $dark_color;
+            color: $white_color;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .formCopy {
+        margin-top: 32px;
+        .inputSector {
+            display: flex;
+            flex-direction: column;
+            gap: $size_1-00rem-16px;
+            height: auto;
+            width: 100%;
+            background-color: transparent;
+            border-radius: none;
+            border: none;
+            padding-left: 0;
+            overflow: visible;
+            input {
+                padding: $size_0-75rem-12px;
+                outline: none;
+                border-radius: $px_16;
+                border: 1px solid $dark_color;
+                color: $grey_color;
+                width: 100%;
+                height: 56px;
+                font-size: $size_1-00rem-16px;
+            }
+            button {
+                width: 100%;
+                height: 56px;
+                border-radius: $px_16;
+                border: 1px solid $dark_color;
+                color: $white_color;
+                font-size: $size_1-00rem-16px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
