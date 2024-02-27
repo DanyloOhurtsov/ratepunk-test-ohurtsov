@@ -1,14 +1,12 @@
 import { NavBar_Links } from "@/constants/text";
 import Link from "next/link";
+import styles from "./styles.module.scss";
 
 const NavBar = () => {
     return (
-        <ul className="hidden items-center gap-x-12 sm:flex">
+        <ul className={styles.navbarList}>
             {NavBar_Links.map((link) => (
-                <li
-                    key={link.id}
-                    className="hover:text-blue-color transition-all text-xl"
-                >
+                <li key={link.id} className={styles.listItem}>
                     <Link href={`/${link.url}`}>{link.label}</Link>
                 </li>
             ))}

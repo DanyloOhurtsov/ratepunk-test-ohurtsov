@@ -5,27 +5,24 @@ import { NavItems } from "@/components/shared";
 import { Favicon, Menu } from "@/public";
 
 // ./ imports
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
-import { Separator } from "../ui/separator";
+import { Sheet, SheetContent, SheetTrigger } from "../../../ui/sheet";
+import { Separator } from "../../../ui/separator";
+import styles from './styles.module.scss'
 
-// Interface
-interface MobileNavbarProps {
-    isOpen: boolean;
-}
 
 const MobileNavBar = () => {
     return (
-        <div className="sm:hidden flex">
+        <div className={styles.mobileContainer}>
             <Sheet>
                 <SheetTrigger>
                     <Image src={Menu} alt="open" />
                 </SheetTrigger>
                 <SheetContent
-                    className="flex flex-col gap-6 bg-white sm:hidden border border-dark-color"
+                    className={styles.sheetContent}
                     side={"top"}
                 >
                     <Image src={Favicon} alt="logo" width={24} />
-                    <Separator className="border border-dark-color" />
+                    <Separator className={styles.separator} />
                     <NavItems />
                 </SheetContent>
             </Sheet>

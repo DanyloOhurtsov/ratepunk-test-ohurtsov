@@ -1,0 +1,7 @@
+@import '/constants/styles/variables';
+
+.itemsList {
+    display: flex;
+    flex-direction: column;
+    row-gap: $size_1-50rem;
+}

@@ -1,0 +1,13 @@
+@import "/constants/styles/variables";
+
+.footerContainer {
+    background-color: $pink_color;
+    padding: $size_3-50rem $size_1-00rem;
+    width: 100%;
+    border: 1px solid $dark_color;
+}
+.footerContent {
+    max-width: $size_72-0rem;
+    margin-left: auto;
+    margin-right: auto;
+}

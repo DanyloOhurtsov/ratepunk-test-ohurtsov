@@ -17,3 +17,4 @@ export const NavBar_Links: NavBar_Links_types[] = [
         url: 'blog'
     },
 ];
+

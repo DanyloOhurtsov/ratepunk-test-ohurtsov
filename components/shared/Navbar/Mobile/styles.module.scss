@@ -1,0 +1,25 @@
+@import "/constants/styles/variables";
+
+.mobileContainer {
+    display: flex;
+}
+
+.sheetContent {
+    display: flex;
+    flex-direction: column;
+    gap: $size_1-50rem;
+    background-color: $white_color;
+    border: 1px solid $dark_color;
+}
+.separator {
+    border: 1px solid $dark_color;
+}
+
+@media (min-width: 640px) {
+    .mobileContainer {
+        display: none;
+    }
+    .sheetContent {
+        display: none;
+    }
+}

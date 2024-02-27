@@ -1,10 +1,10 @@
 import { NavBar_Links } from "@/constants/text";
 import Link from "next/link";
-import React from "react";
+import styles from './styles.module.scss'
 
 const NavItems = () => {
     return (
-        <ul className="flex flex-col gap-y-6">
+        <ul className={styles.itemsList}>
             {NavBar_Links.map((link) => (
                 <li key={link.id}>
                     <Link href={link.url}>{link.label}</Link>

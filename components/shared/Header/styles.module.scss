@@ -1,0 +1,21 @@
+@import "/constants/styles/variables";
+
+.headerContainer {
+    width: 100%;
+    background-color: $white_color;
+    padding-left: $size_1-00rem;
+    padding-right: $size_1-00rem;
+    border: 1px solid $dark_color;
+    position: relative;
+}
+.headerContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $size_72-0rem;
+    padding-top: $size_1-50rem;
+    padding-bottom: $size_1-50rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,24 @@
+@import "/constants/styles/variables";
+
+.navbarList {
+    display: none;
+    align-items: center;
+    column-gap: $size_3-00rem;
+}
+
+.listItem {
+    transition-property: all;
+    transition-timing-function: cubic-bezier($transition_timing);
+    transition-duration: $transition_duration;
+    font-size: $size_1-25rem;
+    line-height: $size_1-75rem;
+    &:hover {
+        color: $blue_color;
+    }
+}
+
+@media (min-width: 640px) {
+    .navbarList {
+        display: flex;
+    }
+}
