@@ -15,6 +15,7 @@ import TikTok from "./assets/tiktok.svg";
 import Twitter from "./assets/twitter.svg";
 import Voucher from "./assets/voucher.svg";
 import Favicon from "./assets/favicon.png";
+import Star from "./assets/star.svg";
 
 export {
     Apple,
@@ -34,4 +35,5 @@ export {
     Twitter,
     Voucher,
     Favicon,
+    Star,
 };

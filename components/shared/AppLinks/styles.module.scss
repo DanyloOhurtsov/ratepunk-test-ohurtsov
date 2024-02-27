@@ -1,0 +1,49 @@
+@import "/constants/styles/variables";
+
+.appLinksContainer {
+    width: 100%;
+    padding: $size_2-00rem_32px $size_1-00rem-16px;
+    background-color: $dark_grey_color;
+    * {
+        font-family: $notoSans;
+    }
+    .appLinksContent {
+        display: flex;
+        gap: $size_2-00rem_32px;
+        align-items: center;
+        max-width: $size_72-0rem_1152px;
+        margin: 0 auto;
+        .linkItem {
+            display: flex;
+            padding: $size_0-75rem-12px $size_1-50rem_24px;
+            border-radius: $px_16;
+            align-items: center;
+            border: 1px solid $dark_color;
+            gap: $size_1-00rem-16px;
+            .text {
+                p{
+                    font-size: $size_1-00rem-16px;  
+                    color: $white_color;
+                    text-transform: lowercase;
+                }
+                .bold{
+                    font-size: $size_1-25rem-20px;
+                    font-weight: bold;
+                }
+            }
+        }
+        .rate{
+            display: flex;
+            gap: $size_1-00rem-16px;
+            align-items: center;
+            .stars{
+                display: flex;
+                gap: 4px;
+            }
+            p{
+                font-size: $size_1-25rem-20px;
+                color: $white_color;
+            }
+        }
+    }
+}

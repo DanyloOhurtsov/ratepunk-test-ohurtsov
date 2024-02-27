@@ -6,6 +6,7 @@ import NavItems from "./Navitems/NavItems";
 import Hero from "./Hero/Hero";
 import FormInput from "./Hero/FormInput/FormInput";
 import FormCopy from "./Hero/FormCopy/FormCopy";
+import AppLinks from "./AppLinks/AppLinks";
 
 export {
     Header,
@@ -16,4 +17,5 @@ export {
     Hero,
     FormCopy,
     FormInput,
+    AppLinks,
 };
